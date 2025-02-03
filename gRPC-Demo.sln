@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcService.Server", "GrpcService.Server\GrpcService.Server.csproj", "{1C95C9CF-53AC-454E-874E-0F87369EAC9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Client", "WebApi.Client\WebApi.Client.csproj", "{7C3DDECE-3478-44C5-964F-CFD5E43D96B9}"
+EndProject
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{BE5CCD88-0038-4D2E-9614-2842DD383B71}"
+	ProjectSection(SolutionItems) = preProject
+		Protos\greeting.proto = Protos\greeting.proto
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grpc.ClientFactory", "Grpc.ClientFactory\Grpc.ClientFactory.csproj", "{36DB179E-FC8E-4487-99C9-CAF7EF658F5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C95C9CF-53AC-454E-874E-0F87369EAC9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C95C9CF-53AC-454E-874E-0F87369EAC9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C95C9CF-53AC-454E-874E-0F87369EAC9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C95C9CF-53AC-454E-874E-0F87369EAC9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C3DDECE-3478-44C5-964F-CFD5E43D96B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3DDECE-3478-44C5-964F-CFD5E43D96B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3DDECE-3478-44C5-964F-CFD5E43D96B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3DDECE-3478-44C5-964F-CFD5E43D96B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36DB179E-FC8E-4487-99C9-CAF7EF658F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36DB179E-FC8E-4487-99C9-CAF7EF658F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36DB179E-FC8E-4487-99C9-CAF7EF658F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36DB179E-FC8E-4487-99C9-CAF7EF658F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal

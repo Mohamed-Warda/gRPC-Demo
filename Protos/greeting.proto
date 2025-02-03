@@ -1,0 +1,28 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcService";
+
+package todo;
+
+service HelloService {
+  // Unary call
+  rpc UnaryService(Request) returns (Response);
+
+  // Client streaming
+  rpc ClientStreamingService(stream Request) returns (Response);
+
+  // Server streaming
+  rpc ServerStreamingService(Request) returns (stream Response);
+
+  // Bidirectional streaming
+  rpc BidirectionalStreamingService(stream Request) returns (stream Response);
+}
+
+message Request {
+  string FirstName = 1;
+  string LastName = 2;
+}
+
+message Response {
+  string Message = 1;
+}
